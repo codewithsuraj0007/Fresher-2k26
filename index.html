@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IT Freshers Party 2026 — Government Polytechnic Lucknow</title>
+  <meta name="description" content="Official Freshers Party Invitation for First-Year Information Technology students of Government Polytechnic Lucknow. Hosted with pride by your Final-Year IT Seniors.">
+  <meta name="theme-color" content="#080B18">
+
+  <!-- Google Fonts: Preconnect & Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon (Inline SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%238B5CF6'/%3E%3Cstop offset='100%25' stop-color='%2322D3EE'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='%23080B18' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='16' y='21' font-family='sans-serif' font-weight='800' font-size='14' fill='%23F5D6A0' text-anchor='middle'%3EIT%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-active-scene="0">
+
+  <!-- Custom Cinematic Cursor (Desktop Fine Pointer Only) -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Background Interactive Ambient Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Global Ambient Glow Overlays -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#scene-container" class="skip-link">Skip to main content</a>
+
+  <!-- Persistent Master Header -->
+  <header class="master-header" role="banner">
+    <div class="header-brand">
+      <div class="brand-crest" aria-hidden="true">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="crest-svg">
+          <circle cx="18" cy="18" r="16" stroke="url(#crestGrad)" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <circle cx="18" cy="18" r="12" stroke="rgba(245, 214, 160, 0.4)" stroke-width="1"/>
+          <path d="M18 9L21 15L27 18L21 21L18 27L15 21L9 18L15 15L18 9Z" fill="url(#crestGrad)"/>
+          <defs>
+            <linearGradient id="crestGrad" x1="9" y1="9" x2="27" y2="27" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8B5CF6"/>
+              <stop offset="0.5" stop-color="#22D3EE"/>
+              <stop offset="1" stop-color="#F5D6A0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">GOVT. POLYTECHNIC LUCKNOW</span>
+        <span class="brand-sub">INFORMATION TECHNOLOGY • CLASS OF 2026–27</span>
+      </div>
+    </div>
+
+    <!-- Quick Controls -->
+    <div class="header-actions">
+      <!-- Scene Counter -->
+      <div class="scene-counter" aria-label="Current scene progress">
+        <span class="counter-current" id="counter-current">01</span>
+        <span class="counter-sep">/</span>
+        <span class="counter-total" id="counter-total">07</span>
+      </div>
+
+      <!-- Ambient Sound Synthesizer Toggle -->
+      <button id="sound-toggle" class="ctrl-btn sound-btn" aria-label="Toggle ambient sound (off by default)" title="Ambient Audio: Off" type="button">
+        <svg class="sound-icon sound-off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg class="sound-icon sound-on-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+        <span class="ctrl-btn-label">AUDIO</span>
+      </button>
+
+      <!-- Primary Fast CTA in header -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1VIHoS7k-38LfOPPzM8svDh7lfVgX0VPw1uuLWqMqcVFTVQ/viewform?usp=publish-editor"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="header-register-btn"
+         aria-label="Register for IT Freshers on Google Forms (opens in new tab)">
+        <span>REGISTER</span>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Top Cinematic Scene Progress Bar -->
+  <div class="scene-progress-track" aria-hidden="true">
+    <div class="scene-progress-bar" id="scene-progress-bar"></div>
+  </div>
+
+  <!-- Floating Right Pagination Dots (Desktop / Tablet) -->
+  <nav class="scene-dots-nav" aria-label="Scene Navigation">
+    <button class="nav-dot active" data-scene="0" aria-label="Go to Scene 1: The Digital Arrival" title="The Digital Arrival">
+      <span class="dot-label">Arrival</span>
+    </button>
+    <button class="nav-dot" data-scene="1" aria-label="Go to Scene 2: The Official Invitation" title="The Official Invitation">
+      <span class="dot-label">Invitation</span>
+    </button>
+    <button class="nav-dot" data-scene="2" aria-label="Go to Scene 3: The Celebration Reveal" title="The Celebration Reveal">
+      <span class="dot-label">The Reveal</span>
+    </button>
+    <button class="nav-dot" data-scene="3" aria-label="Go to Scene 4: Event Details" title="Event Details">
+      <span class="dot-label">Details</span>
+    </button>
+    <button class="nav-dot" data-scene="4" aria-label="Go to Scene 5: A Message From Your Seniors" title="A Message From Your Seniors">
+      <span class="dot-label">Seniors' Note</span>
+    </button>
+    <button class="nav-dot" data-scene="5" aria-label="Go to Scene 6: Discipline & Event Etiquette" title="Discipline & Event Etiquette">
+      <span class="dot-label">Etiquette</span>
+    </button>
+    <button class="nav-dot" data-scene="6" aria-label="Go to Scene 7: The Grand Registration Finale" title="The Grand Registration Finale">
+      <span class="dot-label">Register</span>
+    </button>
+  </nav>
+
+  <!-- Fullscreen Scene Stage Container -->
+  <main id="scene-container" class="scene-container" tabindex="-1">
+
+    <!-- ===================================================================
+         SCENE 01 — THE DIGITAL ARRIVAL
+         =================================================================== -->
+    <section id="scene-0" class="scene scene-active" data-scene-index="0" aria-label="Scene 1: The Digital Arrival">
+      <div class="scene-wrapper scene-arrival">
+        
+        <!-- Glowing 3D-inspired Digital Portal -->
+        <div class="portal-viewport" aria-hidden="true">
+          <div class="portal-ring ring-outer"></div>
+          <div class="portal-ring ring-mid"></div>
+          <div class="portal-ring ring-inner"></div>
+          <div class="portal-core"></div>
+          <div class="portal-grid"></div>
+          <div class="portal-particles">
+            <span class="code-glyph g1">01001001</span>
+            <span class="code-glyph g2">&lt;IT_INIT&gt;</span>
+            <span class="code-glyph g3">01010100</span>
+            <span class="code-glyph g4">{gp_lko}</span>
+          </div>
+        </div>
+
+        <!-- Scene Content -->
+        <div class="arrival-content glass-panel" data-tilt>
+          <div class="tag-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">GOVERNMENT POLYTECHNIC LUCKNOW</span>
+          </div>
+
+          <h2 class="dept-subheading">DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
+
+          <h1 class="hero-title">
+            <span class="title-line title-gradient-cyan">A NEW CHAPTER</span>
+            <span class="title-line title-gradient-champagne">BEGINS</span>
+          </h1>
+
+          <p class="hero-mantra">
+            YOUR STORY. YOUR PEOPLE. YOUR MOMENT.
+          </p>
+
+          <p class="hero-subtext">
+            A bespoke digital initiation crafted by the Final-Year IT Seniors to welcome the incoming first-year class into a legacy of innovation and camaraderie.
+          </p>
+
+          <div class="hero-cta-group">
+            <button id="btn-enter" class="btn btn-primary btn-glow" type="button" aria-label="Enter the Freshers Experience">
+              <span>ENTER THE EXPERIENCE</span>
+              <svg class="btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Bottom Micro Details -->
+          <div class="arrival-meta">
+            <span class="meta-item"><span class="meta-dot"></span> 28 OCTOBER 2026</span>
+            <span class="meta-sep">•</span>
+            <span class="meta-item">ELECTRONICS DEPARTMENT</span>
+            <span class="meta-sep">•</span>
+            <span class="meta-item">FOR 1ST YEAR IT</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SCENE 02 — THE OFFICIAL INVITATION
+         =================================================================== -->
+    <section id="scene-1" class="scene" data-scene-index="1" aria-label="Scene 2: The Official Invitation">
+      <div class="scene-wrapper scene-invitation">
+        
+        <!-- Royal Glassmorphism Parchment Card -->
+        <article class="invitation-card glass-panel" data-tilt>
+          <div class="card-ornament ornament-tl" aria-hidden="true"></div>
+          <div class="card-ornament ornament-tr" aria-hidden="true"></div>
+          <div class="card-ornament ornament-bl" aria-hidden="true"></div>
+          <div class="card-ornament ornament-br" aria-hidden="true"></div>
+
+          <!-- Subtle Animated Seal / Emblem -->
+          <div class="emblem-container" aria-label="Emblem: IT Family - One Community">
+            <div class="emblem-ring" aria-hidden="true"></div>
+            <div class="emblem-inner">
+              <svg class="emblem-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <span class="emblem-text-top">IT FAMILY</span>
+              <span class="emblem-star">✦</span>
+              <span class="emblem-text-bottom">ONE COMMUNITY</span>
+            </div>
+          </div>
+
+          <div class="invitation-header">
+            <span class="invitation-kicker">OFFICIAL INVITATION</span>
+            <h2 class="invitation-title">DEAR JUNIORS, YOU'RE INVITED!</h2>
+            <p class="invitation-subtitle">
+              Welcome to the Information Technology family of Government Polytechnic Lucknow!
+            </p>
+          </div>
+
+          <div class="invitation-divider" aria-hidden="true">
+            <span class="div-line"></span>
+            <span class="div-diamond">◆</span>
+            <span class="div-line"></span>
+          </div>
+
+          <div class="invitation-body">
+            <p class="invitation-paragraph">
+              Your college journey is about more than classes and examinations. It is about learning together, building confidence, discovering your strengths, and creating friendships that last.
+            </p>
+            <p class="invitation-paragraph">
+              As your seniors, we hope you approach every opportunity with curiosity, respect, discipline, and a willingness to help one another.
+            </p>
+            <p class="invitation-punchline">
+              Let's make this new chapter memorable — together.
+            </p>
+          </div>
+
+          <div class="invitation-footer">
+            <div class="signature-block">
+              <span class="signature-salutation">With warm wishes,</span>
+              <span class="signature-seniors">YOUR FINAL-YEAR IT SENIORS</span>
+              <span class="signature-inst">Government Polytechnic Lucknow</span>
+            </div>
+            
+            <button class="btn btn-secondary scene-next-btn" type="button" data-goto="2">
+              <span>EXPLORE THE CELEBRATION</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SCENE 03 — THE CELEBRATION REVEAL
+         =================================================================== -->
+    <section id="scene-2" class="scene" data-scene-index="2" aria-label="Scene 3: The Celebration Reveal">
+      <div class="scene-wrapper scene-reveal">
+        
+        <div class="reveal-header">
+          <span class="reveal-tag">THE REVEAL</span>
+          <h2 class="reveal-title">THE NEXT GENERATION OF IT IS HERE.</h2>
+          <p class="reveal-subtitle">LET'S MAKE SOME MEMORIES!</p>
+        </div>
+
+        <!-- 3 Visually Rich Feature Cards -->
+        <div class="feature-cards-grid">
+          
+          <!-- Card 01 -->
+          <div class="feature-card glass-panel" data-tilt>
+            <div class="card-accent-bar accent-cyan"></div>
+            <div class="feature-num">01</div>
+            <div class="feature-icon-wrapper cyan-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">MEET YOUR PEOPLE</h3>
+            <p class="feature-desc">Turn new faces into familiar friends.</p>
+            <div class="feature-ambient-code" aria-hidden="true">// connect(peers)</div>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="feature-card glass-panel" data-tilt>
+            <div class="card-accent-bar accent-magenta"></div>
+            <div class="feature-num">02</div>
+            <div class="feature-icon-wrapper magenta-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">CREATE YOUR MEMORIES</h3>
+            <p class="feature-desc">Make moments you'll remember long after the semester ends.</p>
+            <div class="feature-ambient-code" aria-hidden="true">// snapshot(time)</div>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="feature-card glass-panel" data-tilt>
+            <div class="card-accent-bar accent-violet"></div>
+            <div class="feature-num">03</div>
+            <div class="feature-icon-wrapper violet-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">GROW TOGETHER</h3>
+            <p class="feature-desc">Learn, connect, collaborate, and build your future in IT.</p>
+            <div class="feature-ambient-code" aria-hidden="true">// elevate(future)</div>
+          </div>
+
+        </div>
+
+        <div class="reveal-action">
+          <button class="btn btn-primary scene-next-btn" type="button" data-goto="3">
+            <span>CHECK EVENT DETAILS & COUNTDOWN</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SCENE 04 — EVENT DETAILS & COUNTDOWN
+         =================================================================== -->
+    <section id="scene-3" class="scene" data-scene-index="3" aria-label="Scene 4: Event Details and Countdown">
+      <div class="scene-wrapper scene-details">
+        
+        <div class="details-card glass-panel" data-tilt>
+          
+          <div class="details-header">
+            <span class="details-badge">OFFICIAL SCHEDULE & VENUE</span>
+            <h2 class="details-title">EVENT DETAILS</h2>
+            <p class="details-sub">Everything you need to know for your grand arrival.</p>
+          </div>
+
+          <!-- Primary Event Grid -->
+          <div class="event-grid">
+            
+            <!-- Tile: Event -->
+            <div class="event-tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">EVENT</span>
+                <span class="tile-value highlight-cyan">IT FRESHERS PARTY</span>
+              </div>
+            </div>
+
+            <!-- Tile: Date -->
+            <div class="event-tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">DATE</span>
+                <span class="tile-value highlight-champagne">28 OCTOBER 2026</span>
+              </div>
+            </div>
+
+            <!-- Tile: Time -->
+            <div class="event-tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">TIME</span>
+                <span class="tile-value">11:00 AM – 5:00 PM</span>
+              </div>
+            </div>
+
+            <!-- Tile: Venue -->
+            <div class="event-tile">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">VENUE</span>
+                <span class="tile-value highlight-magenta">ELECTRONICS DEPARTMENT</span>
+              </div>
+            </div>
+
+            <!-- Tile: Institution -->
+            <div class="event-tile tile-fullwidth">
+              <div class="tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">INSTITUTION</span>
+                <span class="tile-value">GOVERNMENT POLYTECHNIC LUCKNOW</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Timezone-Aware Live Countdown -->
+          <div class="countdown-container" aria-label="Event countdown clock">
+            <div class="countdown-header">
+              <span class="pulse-indicator"></span>
+              <span class="countdown-title">COUNTDOWN TO CELEBRATION (IST • ASIA/KOLKATA)</span>
+            </div>
+            
+            <div class="countdown-grid" id="countdown-grid">
+              <div class="count-box">
+                <span class="count-number" id="cd-days">00</span>
+                <span class="count-label">DAYS</span>
+              </div>
+              <span class="count-colon">:</span>
+              <div class="count-box">
+                <span class="count-number" id="cd-hours">00</span>
+                <span class="count-label">HOURS</span>
+              </div>
+              <span class="count-colon">:</span>
+              <div class="count-box">
+                <span class="count-number" id="cd-minutes">00</span>
+                <span class="count-label">MINUTES</span>
+              </div>
+              <span class="count-colon">:</span>
+              <div class="count-box">
+                <span class="count-number" id="cd-seconds">00</span>
+                <span class="count-label">SECONDS</span>
+              </div>
+            </div>
+
+            <div id="countdown-status" class="countdown-status" aria-live="polite"></div>
+          </div>
+
+          <!-- Save The Date Action Bar -->
+          <div class="details-actions">
+            <button id="save-date-btn" class="btn btn-secondary" type="button" aria-label="Save the date to your calendar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>SAVE THE DATE</span>
+            </button>
+
+            <!-- Save the Date Modal/Dropdown -->
+            <div id="calendar-dropdown" class="calendar-dropdown hidden" role="dialog" aria-label="Calendar options">
+              <button class="cal-option-btn" id="cal-google" type="button">
+                <span>Add to Google Calendar</span>
+              </button>
+              <button class="cal-option-btn" id="cal-ics" type="button">
+                <span>Download .ics Calendar File</span>
+              </button>
+            </div>
+
+            <button class="btn btn-primary scene-next-btn" type="button" data-goto="4">
+              <span>A MESSAGE FROM SENIORS</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SCENE 05 — A MESSAGE FROM YOUR SENIORS
+         =================================================================== -->
+    <section id="scene-4" class="scene" data-scene-index="4" aria-label="Scene 5: A Message From Your Seniors">
+      <div class="scene-wrapper scene-seniors">
+        
+        <article class="senior-message-card glass-panel" data-tilt>
+          <div class="senior-tag">
+            <span class="senior-pulse"></span>
+            <span>A NOTE FROM THE FINAL YEARS</span>
+          </div>
+
+          <h2 class="senior-heading">WE WERE NEW HERE TOO.</h2>
+
+          <div class="senior-quote-box">
+            <p class="senior-para">
+              "Every great journey starts with a first step. College is where you discover not only what you can build, but also who you can become."
+            </p>
+            <p class="senior-para">
+              "Ask questions. Explore new ideas. Support your classmates. Respect your teachers and campus. Never hesitate to learn from a mistake."
+            </p>
+            <p class="senior-para highlight-champagne-text">
+              "We look forward to welcoming you into our IT family."
+            </p>
+          </div>
+
+          <div class="senior-closing">
+            <p class="closing-quote">
+              "Your seniors are cheering for you. Let's make this chapter unforgettable."
+            </p>
+            <div class="closing-sign">
+              <span class="sign-text">Final-Year Information Technology Seniors</span>
+              <span class="sign-inst">Government Polytechnic Lucknow</span>
+            </div>
+          </div>
+
+          <div class="senior-nav-footer">
+            <button class="btn btn-secondary scene-next-btn" type="button" data-goto="5">
+              <span>EVENT ETIQUETTE & DISCIPLINE</span>
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SCENE 06 — DISCIPLINE & EVENT ETIQUETTE
+         =================================================================== -->
+    <section id="scene-5" class="scene" data-scene-index="5" aria-label="Scene 6: Discipline and Event Etiquette">
+      <div class="scene-wrapper scene-etiquette">
+        
+        <div class="etiquette-header">
+          <span class="etiquette-badge">MUTUAL RESPECT & GUIDELINES</span>
+          <h2 class="etiquette-title">LET'S CELEBRATE THE RIGHT WAY.</h2>
+          <p class="etiquette-sub">
+            A memorable celebration thrives on consideration, safety, and mutual respect.
+          </p>
+        </div>
+
+        <!-- 6 Interactive Glass Guidelines Cards -->
+        <div class="etiquette-grid">
+          
+          <div class="etiquette-card glass-panel" data-tilt>
+            <div class="et-icon-num">01</div>
+            <div class="et-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <p class="et-text">Respect your teachers, seniors, juniors, and every attendee.</p>
+          </div>
+
+          <div class="etiquette-card glass-panel" data-tilt>
+            <div class="et-icon-num">02</div>
+            <div class="et-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <p class="et-text">Maintain discipline and follow instructions from the event organizers.</p>
+          </div>
+
+          <div class="etiquette-card glass-panel" data-tilt>
+            <div class="et-icon-num">03</div>
+            <div class="et-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <p class="et-text">Keep the campus clean and take care of college property.</p>
+          </div>
+
+          <div class="etiquette-card glass-panel" data-tilt>
+            <div class="et-icon-num">04</div>
+            <div class="et-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+              </svg>
+            </div>
+            <p class="et-text">Participate respectfully and respect everyone's personal boundaries.</p>
+          </div>
+
+          <div class="etiquette-card glass-panel" data-tilt>
+            <div class="et-icon-num">05</div>
+            <div class="et-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <p class="et-text">Follow the venue's safety guidelines and any official instructions.</p>
+          </div>
+
+          <div class="etiquette-card glass-panel" data-tilt>
+            <div class="et-icon-num">06</div>
+            <div class="et-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <p class="et-text">Arrive on time and cooperate with the organizers.</p>
+          </div>
+
+        </div>
+
+        <div class="etiquette-footer">
+          <p class="etiquette-closing">
+            <span class="gold-sparkle">✦</span> Good memories begin with mutual respect. <span class="gold-sparkle">✦</span>
+          </p>
+          
+          <button class="btn btn-primary scene-next-btn" type="button" data-goto="6">
+            <span>PROCEED TO GRAND REGISTRATION</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SCENE 07 — THE GRAND REGISTRATION FINALE
+         =================================================================== -->
+    <section id="scene-6" class="scene" data-scene-index="6" aria-label="Scene 7: The Grand Registration Finale">
+      <div class="scene-wrapper scene-finale">
+        
+        <!-- Grand Concentric Rings & Luminous Portal -->
+        <div class="finale-portal-container" aria-hidden="true">
+          <div class="finale-ring f-ring-1"></div>
+          <div class="finale-ring f-ring-2"></div>
+          <div class="finale-ring f-ring-3"></div>
+          <div class="finale-ring f-ring-4"></div>
+          <div class="finale-glow-core"></div>
+        </div>
+
+        <div class="finale-card glass-panel" data-tilt>
+          <div class="finale-kicker-tag">
+            <span class="kicker-glow"></span>
+            <span>FINAL-YEAR IT INVITATION</span>
+          </div>
+
+          <h2 class="finale-title">
+            YOUR FIRST IT MEMORY STARTS HERE.
+          </h2>
+
+          <p class="finale-lead">
+            Don't just hear about the memories. Become part of them.
+          </p>
+
+          <!-- Event Summary Badges -->
+          <div class="finale-summary-strip">
+            <div class="strip-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+              </svg>
+              <span>28 OCTOBER 2026</span>
+            </div>
+            <div class="strip-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>11:00 AM – 5:00 PM</span>
+            </div>
+            <div class="strip-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>ELECTRONICS DEPARTMENT</span>
+            </div>
+            <div class="strip-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              </svg>
+              <span>GOVERNMENT POLYTECHNIC LUCKNOW</span>
+            </div>
+          </div>
+
+          <!-- Primary Registration CTA & Secondary Action -->
+          <div class="finale-cta-wrapper">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1VIHoS7k-38LfOPPzM8svDh7lfVgX0VPw1uuLWqMqcVFTVQ/viewform?usp=publish-editor" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               id="primary-register-btn"
+               class="btn btn-hero-register"
+               aria-label="Register for Freshers on Google Forms (opens in new tab)">
+              <span class="btn-shine"></span>
+              <span class="btn-text">REGISTER FOR FRESHERS</span>
+              <svg class="btn-arrow-big" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <button id="btn-revisit" class="btn btn-ghost" type="button" aria-label="Revisit the invitation from the beginning">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon" aria-hidden="true">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+              </svg>
+              <span>REVISIT THE INVITATION</span>
+            </button>
+          </div>
+
+          <!-- Final Signature -->
+          <div class="finale-signature">
+            <span class="sign-heart">MADE WITH ❤️ BY YOUR FINAL-YEAR IT SENIORS</span>
+            <span class="sign-dept">Information Technology • Government Polytechnic Lucknow</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Persistent Bottom Navigation Controls Bar -->
+  <footer class="master-footer" role="contentinfo">
+    <div class="footer-nav-controls">
+      <button id="btn-prev" class="footer-ctrl-btn" aria-label="Previous scene (Up or Left arrow)" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ctrl-arrow" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <span class="ctrl-label">PREVIOUS</span>
+      </button>
+
+      <!-- Keyboard navigation hint pill (Desktop) -->
+      <div class="nav-hint" aria-hidden="true">
+        <span class="key-icon">↑</span>
+        <span class="key-icon">↓</span>
+        <span class="hint-text">or Scroll / Swipe to explore</span>
+      </div>
+
+      <button id="btn-next" class="footer-ctrl-btn" aria-label="Next scene (Down or Right arrow)" type="button">
+        <span class="ctrl-label" id="next-ctrl-label">NEXT SCENE</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ctrl-arrow" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
